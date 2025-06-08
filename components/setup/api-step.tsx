@@ -238,6 +238,16 @@ export const APIStep: FC<APIStepProps> = ({
           onChange={e => onOpenrouterAPIKeyChange(e.target.value)}
         />
       </div>
+
+      <div className="space-y-1">
+        <Label>Dify.ai API Key (Optional)</Label>
+        <Input
+          placeholder="Dify.ai API Key"
+          type="password"
+          value={difyAPIKey}
+          onChange={e => setDifyAPIKey(e.target.value)}
+        />
+      </div>
     </>
   )
 }
